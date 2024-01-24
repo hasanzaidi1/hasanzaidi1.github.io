@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Portfolio site</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		
+		 <nav>
+      <ul class="nav-bar">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about-me">About Me</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resumé</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleSidebar()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+    <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+       <h3>Hasan Zaidi<hr></h3>
+       
+			  
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="https://youtube.com/@carsplanesandmaths5797?si=t2UQCLapz4vxeE7n" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+		 </section> 
+	  </div>
+
+
+    <!--─────────────────About Me────────────────-->
+    <div id="about-me">
+      
+		 <div class="filter"></div>
+		 <section class="intro">
+       <h3>About Me<hr></h3>
+       
+       <p>Greetings! I'm Hasan, a dedicated and enthusiastic programmer on a perpetual quest to embrace cutting-edge technologies and expand my horizons in the digital realm.</p>
+       <div class="profile-image">
+         <img src="Profile_pic.jpeg" alt="">
+       </div>
+       
+<h4>My Journey<hr></h4>
+<p>
+My odyssey in the world of tech commenced with the sheer curiosity of how lines of code could mold and impact our reality. It all started with building algorithms, a humble initiation that quickly evolved into an insatiable desire to learn and innovate.</p>
+
+<h4>My Passion<hr></h4>
+<p>The art of crafting elegant solutions to complex problems exhilarates me. The challenge of optimizing code for efficiency, the thrill of debugging until all is seamless, and the joy of seeing a project come to life - this is where my passion finds its truest expression.</p>
+
+<h4>What I Do<hr></h4>
+<p>My role as a programmer allows me to bring ideas to life through code. From designing algorithms that optimize performance to architecting robust applications, I've had the privilege of being part of projects that demanded innovation and creativity.</p><h5>Beyond Tech: Unleashing Creativity on Canvas</h5>
+       <p>While I thrive in the world of tech, my creativity knows no bounds. When I'm not crafting code, you'll find me lost in the realm of abstract painting, where every stroke tells a unique story. It's here that I find solace and the freedom to express my imagination in vibrant hues. </p>
+
+<h4>Let's Connect<hr></h4>
+<p>I'm always eager to connect with fellow tech enthusiasts, industry professionals, and anyone who shares a passion for innovation and growth.</p>
+<br>
+<p>Thank you for stopping by, and I look forward to connecting with you!</p>
+		 </section> 
+	  </div>
+
+
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>My Projects<hr></h3>
+		  <p>Here are some of my projects, you may like.</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="https://media.istockphoto.com/id/1327058098/vector/anonymous-spy-agent-vector-icon-spy-or-hacker-symbol-isolated-vector-illustration-eps-10.jpg?s=612x612&w=0&k=20&c=HpS_tIJL58CXplXRbKR7tiWGu3OuZNBhk3bpdEZISBo=">
+			    <a href="https://github.com/hasanzaidi1/spotting_the_hacker" target="_blank"> <!--Link to project-->
+				<div class="work-content">Spotting The Hacker<br /> 🕵🏻 </div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://media.istockphoto.com/id/1215058992/vector/password-strength-concept.jpg?s=612x612&w=0&k=20&c=rDW37pcN7o512vry0DC19wEsfzDTX5D4FjM47SMFpcE=">
+				<a href="https://github.com/hasanzaidi1/password_strength" target="_blank"> <!--Link to project-->
+				<div class="work-content">Password Strength Meter</div></a>
+            </div>
+      <div class="card">
+			    <img class="work-img" src="https://as2.ftcdn.net/v2/jpg/03/96/71/03/1000_F_396710370_nDSDD1qsA9vi5106VeACp3zx2jE6VCq9.jpg">
+				<a href="https://github.com/hasanzaidi1/RSA_encryption" target="_blank">
+				<div class="work-content">RSA Encryption<br></div></a>
+      </div> 	 
+			<div class="card">
+			    <img class="work-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhznBtEjYGX3MGqPJhxzgZaeFg6fSKNdy2dMkYoJMpHQ&s">
+				<a href="https://github.com/hasanzaidi1/error_detection" target="_blank">
+				<div class="work-content">Error Detection and Correction<br></div></a>
+      </div> 
+		  </div>
+		  </div>
+	  </div>
+
+
+    <!--──────────────Resume────────────────-->
+
+    <div id="resume">
+      <h3>Resumé<hr></h3>
+      <div class="resume-container">
+        <iframe src="Resume_Professional_Final.pdf" frameborder="0"></iframe>
+      </div>
+    </div>
+
+
+    
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>Contact<hr></h3>
+		   <p>Feel free to contact me on my social media.</p>
+		    <div class="social-media">
+			  <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-twitter"></i></a>
+			  <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="https://youtube.com/@carsplanesandmaths5797?si=t2UQCLapz4vxeE7n" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+		  </div>
+
+	</main>
+	  <footer class="copyright">© 2023 
+		  <a href="#" target="_blank"> Zaidi.</a>
+     </footer>
+	  
+  </div>
+  
+  </body>
+</html>
