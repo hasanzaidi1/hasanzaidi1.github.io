@@ -599,3 +599,36 @@ hr {
         transform: translateX(50px);
     }
 }
+
+/* Night and Day Mode Button */
+.night-day-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+  }
+  
+  .night-day-button button {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+/* Add your existing CSS styles here */
+
+/* Night mode styles */
+.night-mode {
+    --main-background: #f3f3f3;
+    --main-fonts-color: #000000;
+    --main-decor-color: #95749e;
+    --main-header-background: #8892aa;
+    --main-font-family: 'Poppins', sans-serif;
+}
+
+
+  
+  
+  
