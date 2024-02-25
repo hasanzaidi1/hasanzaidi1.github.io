@@ -37,21 +37,21 @@ window.onload = () => navSlide();
 function toggleNightDayMode() {
     console.log("Toggling night and day mode...");
     const body = document.body;
-    const button = document.getElementById('night-day-toggle');
+    const icon = document.getElementById('icon');
 
     // Toggle night mode class on the body element
     body.classList.toggle('night-mode');
 
     // Toggle sun and moon icons based on night mode
     // Toggle moon and sun icons
-    if (button.classList.contains('fa-sun')) {
+    if (icon.classList.contains('fa-sun')) {
         console.log("Switching to night mode...");
-        button.classList.remove('fa-sun');
-        button.classList.add('fa-moon');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     } else {
         console.log("Switching to day mode...");
-        button.classList.remove('fa-moon');
-        button.classList.add('fa-sun');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     }
 }
 

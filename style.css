@@ -617,7 +617,11 @@ hr {
 	cursor: pointer;
   }
 
-/* Add your existing CSS styles here */
+  body.night-mode #night-day-toggle {
+    background-color: var(--main-fonts-color); /* Adjust to your darker font color */
+	color: #f8f8f8;
+}
+
 
 /* Night mode styles */
 .night-mode {
