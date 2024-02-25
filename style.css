@@ -603,7 +603,7 @@ hr {
 /* Night and Day Mode Button */
 .night-day-button {
 	position: fixed;
-	bottom: 20px;
+	bottom: 50px;
 	right: 20px;
 	z-index: 1000;
   }
