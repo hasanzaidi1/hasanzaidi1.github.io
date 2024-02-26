@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.resume {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.education h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.education p {
+    font-size: 16px;
+    margin: 5px 0;
+}
