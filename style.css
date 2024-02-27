@@ -632,7 +632,20 @@ hr {
     --main-font-family: 'Poppins', sans-serif;
 }
 
+.resume-button {
+    padding: 10px 20px;
+    background-color: var(--main-decor-color); /* match your color scheme */
+    color: var(--main-fonts-color); /* match your color scheme */
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font-family); /* match your font family */
+    font-size: 16px; /* adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px; /* adjust margin as needed */
+}
 
-  
-  
-  
+.resume-button:hover {
+    background-color: #202020; /* adjust hover background color */
+    color: #ffffff; /* adjust hover text color */
+}
