@@ -404,6 +404,7 @@ div.resume-container {
 	box-shadow: 0 0 1.5rem gray;
 }
 
+
 /*──────────────────
       Contact
 ──────────────────*/
@@ -648,4 +649,21 @@ hr {
 .resume-button:hover {
     background-color: #202020; /* adjust hover background color */
     color: #ffffff; /* adjust hover text color */
+}
+
+
+
+
+/*──────────────────
+    DevOps Project
+──────────────────*/
+
+.devOps_Project {
+	background-color: var(--main-background);
+}
+
+.devOps_Project h3 {
+	color: var(--main-decor-color);
+	font-family: var(--main-font-family);
+	align-content: center;
 }
