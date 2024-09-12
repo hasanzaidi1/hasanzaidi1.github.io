@@ -667,3 +667,29 @@ hr {
 	font-family: var(--main-font-family);
 	align-content: center;
 }
+
+#skills {
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	text-align: center;
+}
+strong, .bold-title {
+	font-weight: bold !important;
+  }
+  
+
+li {
+    margin-bottom: 10px; /* Adds space below each list item */
+}
+
+p {
+    margin-bottom: 15px; /* Adds space below each paragraph */
+}
+
+.title-large h4{
+	margin-top: 35px;
+	margin-bottom: 15px;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    font-weight: bold; /* Make sure the text remains bold */
+}
+
