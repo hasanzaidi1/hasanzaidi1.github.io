@@ -689,8 +689,8 @@ p {
 .title-large h4{
 	margin-top: 35px;
 	margin-bottom: 15px;
-    font-size: 1.5rem; /* Adjust the size as needed */
-    font-weight: bold; /* Make sure the text remains bold */
+    font-size: 1.5rem; 
+    font-weight: bold;
 }
 
 
