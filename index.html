@@ -19,7 +19,12 @@
 	  <script src="https://kit.fontawesome.com/950246c8f6.js" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="script.js"></script>
-  </head>
+	  <!-- Font Awesome CDN for other icons -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	  <!-- Devicon CDN for PostgreSQL, MySQL, etc. -->
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
     <body>
 	  
         <div class="container">
@@ -31,6 +36,7 @@
       <ul class="nav-bar">
         <li><a class="nav-link" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about-me">About Me</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#resume">Resumé</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -71,9 +77,9 @@
        <h3>About Me<hr></h3>
        
        <p>Greetings! I'm Hasan, a dedicated and enthusiastic programmer on a perpetual quest to embrace cutting-edge technologies and expand my horizons in the digital realm.</p>
-       <!-- <div class="profile-image">
+       <div class="profile-image">
          <img src="Profile_pic.jpeg" alt="">
-       </div> -->
+       </div>
        
 	   <h4>My Journey<hr></h4>
 	   <p>My odyssey in the tech world began with a fascination for how lines of code could shape our reality. Starting with simple algorithms, I quickly developed an insatiable desire to learn, innovate, and push the boundaries of what's possible.</p>
@@ -92,8 +98,79 @@
 	   <br>
 	   <p>Thank you for visiting, and I look forward to connecting with you!</p>
 		 </section> 
-	  </div>
+	  </div>·
 
+	  <!--───────────────Skills───────────────-->
+	  <div id="skills">
+		<h3>My Skills<hr></h3>
+		<div class="skills-container">
+			<!-- Languages Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-code"></i> Languages:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-python" style="color:#306998;"></i> Python</li>
+					<li><i class="fab fa-js" style="color:#f7df1e;"></i> JavaScript</li>
+					<li><i class="devicon-cplusplus-plain colored" ></i> C/C++</li>
+					<li><i class="fab fa-java" style="color:#5382a1;"></i> Java</li>
+					<li><i class="fab fa-rust" style="color:#dea584;"></i> Rust</li> <!-- Added Rust -->
+					<li><i class="devicon-csharp-plain colored"></i> C#</li>
+				</ul>
+			</div>
+	
+			<!-- Web Development Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-code title-large"></i> Web Development:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-html5" style="color:#e34c26;"></i> HTML</li>
+					<li><i class="fab fa-css3-alt" style="color:#1572b6;"></i> CSS</li>
+					<li><i class="fab fa-node-js" style="color:#339933;"></i> Express.js</li>
+					<li><i class="devicon-flask-original" style="color:#5382a1;"></i> Flask</li>
+				</ul>
+			</div>
+	
+			<!-- Databases Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-database"></i> Databases:</h4>
+				<ul class="skills-list">
+					<li><i class="devicon-postgresql-plain" style="color:#336791;"></i> PostgreSQL</li>
+					<li><i class="devicon-mysql-plain" style="color:#4479A1;"></i> MySQL</li>
+					<li><i class="devicon-sqlite-plain colored"></i> SQLite</li>
+					<li><i class="devicon-mongodb-plain" style="color:#177a16;"></i> MongoDB (NoSQL)</li>
+				</ul>
+			</div>
+	
+			<!-- Version Control Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-code-branch"></i> Version Control:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-git-alt" style="color:#f1502f;"></i> Git</li>
+					<li><i class="fab fa-github"></i> GitHub</li>
+				</ul>
+			</div>
+	
+			<!-- Other Tools Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-tools"></i> Other Tools:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-docker" style="color:#2496ED;"></i> Docker</li>
+					<li><i class="fab fa-jenkins" style="color:#D24939;"></i> Jenkins</li>
+					<li><i class="devicon-redis-plain colored"></i> Redis</li>
+				</ul>
+			</div>
+	
+			<!-- Operating Systems Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-desktop"></i> Operating Systems:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-apple" style="color:#dcc4c4;"></i> macOS</li>
+					<li><i class="fab fa-linux" style="color:#FCC624;"></i> Linux</li>
+					<li><i class="fab fa-windows" style="color:#00a4ef;"></i> Windows</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	  
+	
 
 	  <!--───────────────Projects───────────────-->
 	  <div id="projects"> 
