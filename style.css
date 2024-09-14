@@ -693,3 +693,62 @@ p {
     font-weight: bold; /* Make sure the text remains bold */
 }
 
+
+
+/* Container for all skill sections */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-gap: 20px; /* Space between grid items */
+}
+
+/* Individual skill sections */
+.skills-section {
+    background-color: var(--main-header-background);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Skills List Styling */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns inside each section */
+    grid-gap: 10px;
+    justify-items: center; /* Horizontal center alignment */
+    align-items: center; /* Vertical center alignment */
+}
+
+/* Center align the content inside each skill item */
+.skills-list li {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally within each column */
+    gap: 8px;
+}
+
+
+/* Hover Effect */
+.skills-list li:hover {
+    color: var(--main-decor-color);
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* Adjust Icon Size */
+.skills-list i {
+    font-size: 1.5rem;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr; /* Single column inside sections on small screens */
+    }
+}

@@ -19,8 +19,11 @@
 	  <script src="https://kit.fontawesome.com/950246c8f6.js" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="script.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css">  
+	  <!-- Font Awesome CDN for other icons -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	  <!-- Devicon CDN for PostgreSQL, MySQL, etc. -->
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
     <body>
 	  
@@ -33,6 +36,7 @@
       <ul class="nav-bar">
         <li><a class="nav-link" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about-me">About Me</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#resume">Resumé</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -98,51 +102,74 @@
 
 	  <!--───────────────Skills───────────────-->
 	  <div id="skills">
-		<h3>Skills<hr></h3>
-		<ul>
-			<li>
-				<span class="bold-title title-large"><h4>Languages:<hr></h4></span>
-				Python <i class="fab fa-python"></i> •
-				JavaScript <i class="fab fa-js"></i> • 
-				C++ <i class="devicon-cplusplus-plain"></i> •
-				SQL
-			</li>
-			<li>
-				<span class="bold-title title-large"><h4><i class="fas fa-code"></i>Web Development:<hr></h4></span> 
-				HTML <i class="fab fa-html5"></i> • 
-				CSS <i class="fab fa-css3-alt"></i> • 
-				Flask •
-				Express.js <i class="fab fa-node-js"></i> •
-				Java <i class="fab fa-java"></i>
-			</li>
-			<li>
-				<span class="bold-title title-large"><h4><i class="fas fa-database"></i> Databases:<hr></h4></span> 
-				PostgreSQL <i class="devicon-postgresql"></i> •
-				MySQL <i class="devicon-mysql-plain"></i> • 
-				SQLite •
-				MongoDB (NoSQL)
-			</li>
-			<li>
-				<span class="bold-title title-large"><h4><i class="fas fa-code-branch"></i> Version Control:<hr></h4></span> 
-				Git <i class="fab fa-git-alt"></i> • 
-				GitHub <i class="fab fa-github"></i>
-			</li>
-			<li>
-				<span class="bold-title title-large"><h4><i class="fas fa-tools"></i> Other Tools:<hr></h4></span> 
-				Docker <i class="fab fa-docker"></i> • 
-				Redis •
-				Jenkins <i class="fab fa-jenkins"></i>
-			</li>
-			<li>
-				<span class="bold-title title-large"><h4><i class="fas fa-desktop"></i> Operating Systems:<hr></h4></span> 
-				macOS <i class="fab fa-apple"></i> •
-				Linux <i class="fab fa-linux"></i> •
-				Windows <i class="fab fa-windows"></i>
-			</li>
-		  </ul>		  
-	  </div>
+		<h3>My Skills<hr></h3>
+		<div class="skills-container">
+			<!-- Languages Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-code"></i> Languages:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-python" style="color:#306998;"></i> Python</li>
+					<li><i class="fab fa-js" style="color:#f7df1e;"></i> JavaScript</li>
+					<li><i class="fas fa-laptop-code" style="color:#5559c9;"></i> C/C++/C#</li>
+					<li><i class="fab fa-java" style="color:#5382a1;"></i> Java</li>
+					<li><i class="fab fa-rust" style="color:#dea584;"></i> Rust</li> <!-- Added Rust -->
+				</ul>
+			</div>
+	
+			<!-- Web Development Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-code title-large"></i> Web Development:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-html5" style="color:#e34c26;"></i> HTML</li>
+					<li><i class="fab fa-css3-alt" style="color:#1572b6;"></i> CSS</li>
+					<li><i class="fab fa-node-js" style="color:#339933;"></i> Express.js</li>
+					<li><i class="fab fa-flask" style="color:#5382a1;"></i> Flask</li>
+				</ul>
+			</div>
+	
+			<!-- Databases Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-database"></i> Databases:</h4>
+				<ul class="skills-list">
+					<li><i class="devicon-postgresql-plain" style="color:#336791;"></i> PostgreSQL</li>
+					<li><i class="devicon-mysql-plain" style="color:#4479A1;"></i> MySQL</li>
+					<li><i class="fas fa-database"></i> SQLite</li>
+					<li><i class="fas fa-database"></i> MongoDB (NoSQL)</li>
+				</ul>
+			</div>
+	
+			<!-- Version Control Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-code-branch"></i> Version Control:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-git-alt" style="color:#f1502f;"></i> Git</li>
+					<li><i class="fab fa-github"></i> GitHub</li>
+				</ul>
+			</div>
+	
+			<!-- Other Tools Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-tools"></i> Other Tools:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-docker" style="color:#2496ED;"></i> Docker</li>
+					<li><i class="fab fa-jenkins" style="color:#D24939;"></i> Jenkins</li>
+					<li><i class="fas fa-tools"></i> Redis</li>
+				</ul>
+			</div>
+	
+			<!-- Operating Systems Section -->
+			<div class="skills-section">
+				<h4><i class="fas fa-desktop"></i> Operating Systems:</h4>
+				<ul class="skills-list">
+					<li><i class="fab fa-apple" style="color:#dcc4c4;"></i> macOS</li>
+					<li><i class="fab fa-linux" style="color:#FCC624;"></i> Linux</li>
+					<li><i class="fab fa-windows" style="color:#00a4ef;"></i> Windows</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	  
-		
+	
 
 	  <!--───────────────Projects───────────────-->
 	  <div id="projects"> 
