@@ -668,6 +668,11 @@ hr {
 	align-content: center;
 }
 
+
+/*──────────────────
+    Skills Section
+──────────────────*/
+
 #skills {
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
