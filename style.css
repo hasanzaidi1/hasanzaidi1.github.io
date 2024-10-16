@@ -298,11 +298,29 @@ div.resume-container {
   max-width: 1100px;
 }
 
+.mobile-resume-button {
+    display: none; /* Hidden by default, shown via JavaScript on mobile */
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-decor-color);
+    color: var(--main-fonts-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 @media (max-width: 768px) {
-  .resume-container {
-    width: 100%;
-  }
+    .mobile-resume-button {
+        display: block;
+		width: 50%;
+    }
+    #resume .resume-container {
+        display: none;
+    }
 }
 
 /*──────────────────

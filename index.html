@@ -4,11 +4,16 @@
 		<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGN2ENDFKZ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'G-DGN2ENDFKZ');
+	gtag('config', 'G-DGN2ENDFKZ');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const resumeLink = document.getElementById('resume-iframe');
+        resumeLink.setAttribute('src', RESUME_FILE_NAME); // Set href using the global variable
+    });
 </script>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
@@ -124,7 +129,9 @@
 					<li><i class="fab fa-html5" style="color:#e34c26;"></i> HTML</li>
 					<li><i class="fab fa-css3-alt" style="color:#1572b6;"></i> CSS</li>
 					<li><i class="fab fa-node-js" style="color:#339933;"></i> Express.js</li>
+					<li><i class="fab fa-node" style="color:#339933;"></i> Node.js</li>
 					<li><i class="devicon-flask-original" style="color:#5382a1;"></i> Flask</li>
+					<li><i class="fab fa-react" style="color:#61DAFB;"></i> React.js</li>
 				</ul>
 			</div>
 	
@@ -227,11 +234,13 @@
     <!--──────────────Resume────────────────-->
 
     <div id="resume">
-      	<h3>Resumé<hr></h3>
-      	<div class="resume-container">
-        <iframe src="Resume_Professional_Final_v2.4.0.pdf" frameborder="0"></iframe>
+		<h3>Resumé<hr></h3>
+		<button class="mobile-resume-button">Open Resume</button>
+		<div class="resume-container">
+			<iframe src="" frameborder="0" id="resume-iframe"></iframe>
+		</div>
 	</div>
-    </div>
+	
 
 
     

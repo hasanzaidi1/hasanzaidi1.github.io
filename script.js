@@ -1,3 +1,6 @@
+
+const RESUME_FILE_NAME = "Resume_Professional_Final_v2.4.0.pdf";
+
 // header scrolling effect
 $(window).on('scroll', function(){
     if($(window).scrollTop()){
@@ -54,6 +57,38 @@ function toggleNightDayMode() {
         icon.classList.add('fa-sun');
     }
 }
+
+// Function to handle mobile resume button
+
+function handleMobileResumeButton() {
+    const resumeSection = document.getElementById('resume');
+    if (!resumeSection) return;
+
+    const resumeContainer = resumeSection.querySelector('.resume-container');
+    if (!resumeContainer) return;
+
+    let mobileButton = resumeSection.querySelector('.mobile-resume-button');
+    if (!mobileButton) {
+        mobileButton = document.createElement('button');
+        mobileButton.textContent = 'Open Resume';
+        mobileButton.classList.add('mobile-resume-button');
+        resumeSection.insertBefore(mobileButton, resumeContainer);
+    }
+
+    mobileButton.addEventListener('click', () => {
+        window.open(RESUME_FILE_NAME, '_blank');
+    });
+
+    function toggleMobileView() {
+        const isMobile = window.innerWidth <= 768;
+        resumeSection.classList.toggle('mobile-view', isMobile);
+    }
+
+    window.addEventListener('resize', toggleMobileView);
+    toggleMobileView(); // Initial call
+}
+
+document.addEventListener('DOMContentLoaded', handleMobileResumeButton);
 
 // Call the toggleNightDayMode function when the button is clicked
 document.getElementById('night-day-toggle').addEventListener('click', toggleNightDayMode);
