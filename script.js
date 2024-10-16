@@ -1,3 +1,6 @@
+
+const RESUME_FILE_NAME = "Resume_Professional_Final_v2.4.0.pdf";
+
 // header scrolling effect
 $(window).on('scroll', function(){
     if($(window).scrollTop()){
@@ -73,7 +76,7 @@ function handleMobileResumeButton() {
     }
 
     mobileButton.addEventListener('click', () => {
-        window.open('Resume_Professional_Final_v2.4.0.pdf', '_blank');
+        window.open(RESUME_FILE_NAME, '_blank');
     });
 
     function toggleMobileView() {

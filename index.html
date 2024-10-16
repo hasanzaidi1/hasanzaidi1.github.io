@@ -4,11 +4,16 @@
 		<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGN2ENDFKZ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'G-DGN2ENDFKZ');
+	gtag('config', 'G-DGN2ENDFKZ');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const resumeLink = document.getElementById('resume-iframe');
+        resumeLink.setAttribute('src', RESUME_FILE_NAME); // Set href using the global variable
+    });
 </script>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
@@ -230,9 +235,10 @@
 		<h3>Resumé<hr></h3>
 		<button class="mobile-resume-button">Open Resume</button>
 		<div class="resume-container">
-		  <iframe src="Resume_Professional_Final_v2.4.0.pdf" frameborder="0"></iframe>
+			<iframe src="" frameborder="0" id="resume-iframe"></iframe>
 		</div>
 	</div>
+	
 
 
     
