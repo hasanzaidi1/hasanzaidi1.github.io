@@ -385,15 +385,17 @@ div.resume-container {
 	padding: 20px;
 }
 
-.card{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    background:var(--main-decor-color);
+.card {
+    position: relative; /* Make sure this is set */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 200px;
+    height: 250px;
+    border-radius: 12px;
+    background: var(--main-decor-color);
 }
+
 
 .card img{
 	width: 100%;
@@ -422,6 +424,21 @@ div.resume-container {
 	box-shadow: 0 0 1.5rem gray;
 }
 
+.project-lang:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+.project-lang {
+    position: absolute; /* Position the language label absolutely within the card */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Background color with transparency */
+    padding: 5px; /* Add some padding */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Text color */
+    font-size: 16px; /* Adjust font size as needed */
+}
 
 /*──────────────────
       Contact
