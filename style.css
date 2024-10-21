@@ -467,7 +467,12 @@ div.resume-container {
 }
 
 .link-git-proj {
-	color: var(--terr-color);
+    color: var(--terr-color);
+    transition: transform 0.8s ease-in-out 0.2s; /* Slower transition with a delay */
+}
+
+.link-git-proj:hover i {
+    transform: rotate(90deg); /* Rotate the icon to point left */
 }
 
 
