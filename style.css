@@ -258,6 +258,78 @@ a.nav-link{
 
 
 /*──────────────────
+    Certification
+──────────────────*/
+
+
+
+.section {
+    margin: 40px auto;
+    max-width: 800px; /* Adjust according to your design */
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: var(--main-background); /* Match your portfolio's background */
+    border-radius: 8px;
+}
+
+.certification {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    background-color: var(--main-background); /* White background for each certification */
+}
+
+.certification h3 {
+    margin: 0;
+    font-size: 1.2em; /* Ensure consistent font size */
+    color: var(--main-fonts-color); /* Adjust according to your theme */
+    font-family: var(--main-font-family);
+}
+
+.certification p {
+    margin: 5px 0;
+    color: var(--main-fonts-color); /* Adjust according to your theme */
+    font-family: var(--main-font-family);
+}
+
+.certification a {
+    font-family: var(--main-font-family);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: var(--main-fonts-color);
+    background-color: #007bff; /* Match your theme */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.certification a:hover {
+    background-color: var(--terr-color); /* Darker shade on hover */
+}
+
+#certifications h3 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .certification {
+        padding: 10px; /* Reduce padding for certifications */
+    }
+
+    .certification a {
+        padding: 6px 10px; /* Adjust button size */
+    }
+}
+
+
+
+/*──────────────────
     resume
 ──────────────────*/
 
@@ -702,7 +774,7 @@ hr {
     --main-decor-color: #95749e;
     --main-header-background: #8892aa;
     --main-font-family: 'Poppins', sans-serif;
-	--terr-color: rgb(5, 5, 125);
+	--terr-color: #95749e;
 }
 
 .resume-button {
