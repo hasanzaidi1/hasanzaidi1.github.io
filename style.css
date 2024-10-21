@@ -7,7 +7,7 @@
 	--main-decor-color:#00a9e2;
     --main-header-background:#21252e;
 	--main-font-family: 'Poppins', sans-serif;
-	--terr-color: magenta;
+	--terr-color: #FF6F20;
 }
 
 *{
@@ -240,7 +240,7 @@ a.nav-link{
 }
 
 #about-me img:hover{
-  border: 5px solid #f0f;
+  border: 5px solid var(--terr-color);
 }
 
 #about-me h5{
