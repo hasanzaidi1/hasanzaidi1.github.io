@@ -901,3 +901,31 @@ p {
         grid-template-columns: 1fr; /* Single column inside sections on small screens */
     }
 }
+
+
+/* Update for mobile screens */
+@media (max-width: 500px) {
+    /* Adjusting large titles */
+    h3 {
+      font-size: 35px; /* Reduce from 60px */
+    }
+  
+    #about-me h4, #about-me h5 {
+      font-size: 20px; /* Scale down for smaller screens */
+    }
+  
+    .intro h3 {
+      font-size: 40px; /* Reduce large title size in intro section */
+    }
+  
+    /* Adjust project titles */
+    #projects h3 {
+      font-size: 30px;
+    }
+  
+    /* General scaling */
+    .intro p {
+      font-size: 1rem; /* Reduce text size */
+    }
+  }
+  
