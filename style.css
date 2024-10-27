@@ -7,6 +7,7 @@
 	--main-decor-color:#00a9e2;
     --main-header-background:#21252e;
 	--main-font-family: 'Poppins', sans-serif;
+	--terr-color: #FF6F20;
 }
 
 *{
@@ -239,7 +240,7 @@ a.nav-link{
 }
 
 #about-me img:hover{
-  border: 5px solid #f0f;
+  border: 5px solid var(--terr-color);
 }
 
 #about-me h5{
@@ -252,6 +253,78 @@ a.nav-link{
   text-align: center;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+
+
+
+/*──────────────────
+    Certification
+──────────────────*/
+
+
+
+.section {
+    margin: 40px auto;
+    max-width: 800px; /* Adjust according to your design */
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: var(--main-background); /* Match your portfolio's background */
+    border-radius: 8px;
+}
+
+.certification {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    background-color: var(--main-background); /* White background for each certification */
+}
+
+.certification h3 {
+    margin: 0;
+    font-size: 1.2em; /* Ensure consistent font size */
+    color: var(--main-fonts-color); /* Adjust according to your theme */
+    font-family: var(--main-font-family);
+}
+
+.certification p {
+    margin: 5px 0;
+    color: var(--main-fonts-color); /* Adjust according to your theme */
+    font-family: var(--main-font-family);
+}
+
+.certification a {
+    font-family: var(--main-font-family);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: var(--main-fonts-color);
+    background-color: #007bff; /* Match your theme */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.certification a:hover {
+    background-color: var(--terr-color); /* Darker shade on hover */
+}
+
+#certifications h3 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .certification {
+        padding: 10px; /* Reduce padding for certifications */
+    }
+
+    .certification a {
+        padding: 6px 10px; /* Adjust button size */
+    }
 }
 
 
@@ -298,11 +371,29 @@ div.resume-container {
   max-width: 1100px;
 }
 
+.mobile-resume-button {
+    display: none; /* Hidden by default, shown via JavaScript on mobile */
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-decor-color);
+    color: var(--main-fonts-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 @media (max-width: 768px) {
-  .resume-container {
-    width: 100%;
-  }
+    .mobile-resume-button {
+        display: block;
+		width: 50%;
+    }
+    #resume .resume-container {
+        display: none;
+    }
 }
 
 /*──────────────────
@@ -367,15 +458,20 @@ div.resume-container {
 	padding: 20px;
 }
 
-.card{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    background:var(--main-decor-color);
+.card {
+	position: relative; /* Keep relative positioning for card */
+    overflow: hidden; /* Hide overflow to maintain card boundaries */
+    margin-bottom: 10px; /* Space between card and dropdown */
+    position: relative; /* Make sure this is set */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 200px;
+    height: 250px;
+    border-radius: 12px;
+    background: var(--main-decor-color);
 }
+
 
 .card img{
 	width: 100%;
@@ -401,7 +497,54 @@ div.resume-container {
 }
 
 .card:hover{
+	transform: scale(1.05); /* Slightly scale up on hover */
 	box-shadow: 0 0 1.5rem gray;
+}
+
+.project-lang:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+.project-lang {
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute; /* Position the language label absolutely within the card */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Background color with transparency */
+    padding: 5px; /* Add some padding */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-weight: bolder; /* Make the text bold */
+    color: #333; /* Text color */
+    font-size: 10px; /* Adjust font size as needed */
+}
+
+.description {
+    display: none; /* Initially hidden */
+    position: absolute; /* Positioning for description */
+    top: 10px; /* Position it at the top of the card */
+    left: 10px; /* Padding from the left */
+    right: 10px; /* Padding from the right */
+    background: var(--main-header-background); /* Slightly transparent background */
+	font-family: var(--main-font-family);
+    padding: 10px; /* Padding for description */
+    border-radius: 8px; /* Rounded corners for description */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for description */
+    z-index: 10; /* Ensure description is above other elements */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.card:hover .description {
+    display: block; /* Show description on hover */
+	
+}
+
+.link-git-proj {
+    color: var(--terr-color);
+    transition: transform 0.8s ease-in-out 0.2s; /* Slower transition with a delay */
+}
+
+.link-git-proj:hover i {
+    transform: rotate(90deg); /* Rotate the icon to point left */
 }
 
 
@@ -631,6 +774,7 @@ hr {
     --main-decor-color: #95749e;
     --main-header-background: #8892aa;
     --main-font-family: 'Poppins', sans-serif;
+	--terr-color: #017159;
 }
 
 .resume-button {
@@ -667,3 +811,121 @@ hr {
 	font-family: var(--main-font-family);
 	align-content: center;
 }
+
+
+/*──────────────────
+    Skills Section
+──────────────────*/
+
+#skills {
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	text-align: center;
+}
+strong, .bold-title {
+	font-weight: bold !important;
+  }
+  
+
+li {
+    margin-bottom: 10px; /* Adds space below each list item */
+}
+
+p {
+    margin-bottom: 15px; /* Adds space below each paragraph */
+}
+
+.title-large h4{
+	margin-top: 35px;
+	margin-bottom: 15px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+
+
+/* Container for all skill sections */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-gap: 20px; /* Space between grid items */
+}
+
+/* Individual skill sections */
+.skills-section {
+    background-color: var(--main-header-background);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Skills List Styling */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns inside each section */
+    grid-gap: 10px;
+    justify-items: center; /* Horizontal center alignment */
+    align-items: center; /* Vertical center alignment */
+}
+
+/* Center align the content inside each skill item */
+.skills-list li {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally within each column */
+    gap: 8px;
+}
+
+
+/* Hover Effect */
+.skills-list li:hover {
+    color: var(--main-decor-color);
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* Adjust Icon Size */
+.skills-list i {
+    font-size: 1.5rem;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr; /* Single column inside sections on small screens */
+    }
+}
+
+
+/* Update for mobile screens */
+@media (max-width: 500px) {
+    /* Adjusting large titles */
+    h3 {
+      font-size: 35px; /* Reduce from 60px */
+    }
+  
+    #about-me h4, #about-me h5 {
+      font-size: 20px; /* Scale down for smaller screens */
+    }
+  
+    .intro h3 {
+      font-size: 40px; /* Reduce large title size in intro section */
+    }
+  
+    /* Adjust project titles */
+    #projects h3 {
+      font-size: 30px;
+    }
+  
+    /* General scaling */
+    .intro p {
+      font-size: 1rem; /* Reduce text size */
+    }
+  }
+  

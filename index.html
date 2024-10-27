@@ -1,176 +1,363 @@
 <!DOCTYPE html>
 <html>
-  <head>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGN2ENDFKZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-DGN2ENDFKZ');
-</script>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Portfolio Hasan</title>
-      <link href="style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
-	  <script src="https://kit.fontawesome.com/950246c8f6.js" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="script.js"></script>
-  </head>
-    <body>
-	  
-        <div class="container">
-	  
-		<!--────────────────Header───────────────-->
-	<header>
-		
-		 <nav>
-      <ul class="nav-bar">
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about-me">About Me</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#resume">Resumé</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGN2ENDFKZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        	function gtag(){dataLayer.push(arguments);}
+        	gtag('js', new Date());
+        
+        	gtag('config', 'G-DGN2ENDFKZ');
+        
+            document.addEventListener('DOMContentLoaded', () => {
+                const resumeLink = document.getElementById('resume-iframe');
+                resumeLink.setAttribute('src', RESUME_FILE_NAME); // Set href using the global variable
+            });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Hasan</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/globe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/950246c8f6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Font Awesome CDN for other icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-      <div class="hamburger" onclick="toggleSidebar()">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-	</header>
-	<main>
-		<!--─────────────────Home────────────────-->
-    <div id="home">
-		 <div class="filter"></div>
-		 <section class="intro">
-       <h3>Hasan Zaidi<hr></h3>
-       
-			  
-		  <!--────social media links─────-->
-			 
-		  <div class="social-media">
-			  <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></a>
-			  <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-			  <a href="https://youtube.com/@carsplanesandmaths5797?si=t2UQCLapz4vxeE7n" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-		 </section> 
-	  </div>
+    <!-- Devicon CDN for PostgreSQL, MySQL, etc. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
 
+<body>
 
-    <!--─────────────────About Me────────────────-->
-    <div id="about-me">
-      
-		 <div class="filter"></div>
-		 <section class="intro">
-       <h3>About Me<hr></h3>
-       
-       <p>Greetings! I'm Hasan, a dedicated and enthusiastic programmer on a perpetual quest to embrace cutting-edge technologies and expand my horizons in the digital realm.</p>
-       <!-- <div class="profile-image">
-         <img src="Profile_pic.jpeg" alt="">
-       </div> -->
-       
-	   <h4>My Journey<hr></h4>
-	   <p>My odyssey in the tech world began with a fascination for how lines of code could shape our reality. Starting with simple algorithms, I quickly developed an insatiable desire to learn, innovate, and push the boundaries of what's possible.</p>
+    <div class="container">
 
-	   <h4>My Passion<hr></h4>
-	   <p>The thrill of crafting elegant solutions to complex problems drives me. I find joy in optimizing code for efficiency, debugging until perfection is achieved, and witnessing a project come to life from concept to completion. This process embodies my passion for technology.</p>
+        <!--────────────────Header───────────────-->
+        <header>
 
-	   <h4>What I Do<hr></h4>
-	   <p>As a programmer, I transform ideas into functional and robust applications. My expertise lies in designing performance-optimized algorithms and creating scalable architectures that meet diverse project requirements. Each project I undertake challenges me to apply innovation and creativity.</p>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#resume">Resumé</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
 
-	   <h5>Beyond Tech: Unleashing Creativity on Canvas</h5>
-	   <p>While I thrive in the technical realm, my creativity extends to abstract painting. Here, I find solace and freedom, expressing my imagination through vibrant hues and unique strokes. This creative outlet complements my technical work, providing a balanced approach to problem-solving and innovation.</p>
-
-	   <h4>Let's Connect<hr></h4>
-	   <p>I am eager to connect with fellow tech enthusiasts, industry professionals, and anyone passionate about innovation and growth. Whether discussing new ideas, collaborating on projects, or sharing experiences, I believe in the power of community and continuous learning.</p>
-	   <br>
-	   <p>Thank you for visiting, and I look forward to connecting with you!</p>
-		 </section> 
-	  </div>
+                <div class="hamburger" onclick="toggleSidebar()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--─────────────────Home────────────────-->
+            <div id="home">
+                <div class="filter"></div>
+                <section class="intro">
+                    <h3>Hasan Zaidi<hr></h3>
 
 
-	  <!--───────────────Projects───────────────-->
-	  <div id="projects"> 
-		 <h3>My Projects<hr></h3>
-		  <div class="work-box">
-		  <div class="work">
-		<!--───────────────card───────────────-->
-			<div class="card">
-			    <img class="work-img" src="https://media.istockphoto.com/id/1327058098/vector/anonymous-spy-agent-vector-icon-spy-or-hacker-symbol-isolated-vector-illustration-eps-10.jpg?s=612x612&w=0&k=20&c=HpS_tIJL58CXplXRbKR7tiWGu3OuZNBhk3bpdEZISBo=">
-			    <a href="https://github.com/hasanzaidi1/spotting_the_hacker" target="_blank"> <!--Link to project-->
-				<div class="work-content">Spotting The Hacker<br /> 🕵🏻 </div></a>
+                    <!--────social media links─────-->
+
+                    <div class="social-media">
+                        <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
+                        <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                        <a href="mailto:hasanammarzaidi@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </section>
             </div>
-			<div class="card">
-				<img class="work-img" src="https://media.istockphoto.com/id/1215058992/vector/password-strength-concept.jpg?s=612x612&w=0&k=20&c=rDW37pcN7o512vry0DC19wEsfzDTX5D4FjM47SMFpcE=">
-				<a href="https://github.com/hasanzaidi1/password_strength" target="_blank"> <!--Link to project-->
-				<div class="work-content">Password Strength Meter</div></a>
-			</div>
-			<div class="card">
-			    <img class="work-img" src="key-encryption-icon-free-vector.jpg">
-				<a href="https://github.com/hasanzaidi1/RSA_encryption" target="_blank">
-				<div class="work-content">RSA Encryption<br></div></a>
-      		</div>
-			<div class="card">
-			    <img class="work-img" src="image_ec.png">
-				<a href="https://github.com/hasanzaidi1/error_detection" target="_blank">
-				<div class="work-content">Error Detection and Correction<br></div></a>
-			</div> 
-			<div class="card">
-				<img class="work-img" src="istockphoto-1208386205-612x612.jpg">
-				<a href="https://github.com/hasanzaidi1/AB_game.git" target="_blank">
-				<div class="work-content">AB Game<br></div></a>
-			</div> 
-	  <!-- <div class="card">
-		<img class="work-img" src="image.png">
-		<a href="DevOpsProjects/DevOpsPage.html" target="_blank"> 
-		<div class="work-content">Password Strength Meter</div></a>
-	</div> -->
-		  </div>
-		  </div>
-	  </div>
 
 
-    <!--──────────────Resume────────────────-->
+            <!--─────────────────About Me────────────────-->
+            <div id="about-me">
 
-    <div id="resume">
-      	<h3>Resumé<hr></h3>
-<!--uncomment line 124 once page is complete -->
-<!--	<a href="https://hasanzaidi1.github.io/portfolio_resume/"><button class="resume-button">Detailed Resume</button></a> -->
-      	<div class="resume-container">
-        <iframe src="Resume_Professional_Final_v1.2.0.pdf" frameborder="0"></iframe>
-	</div>
+                <div class="filter"></div>
+                <section class="intro">
+                    <h3>About Me<hr></h3>
+
+                    <p>Hey there! I'm Hasan, a curious and passionate programmer who's always on the lookout for the latest tech trends and new ways to push the envelope in the digital world. I love learning, building, and growing my skill set with every
+                        new challenge.</p>
+                    <div class="profile-image">
+                        <img src="pics/Profile_pic.jpeg" alt="">
+                    </div>
+
+                    <h4>My Journey<hr></h4>
+                    <p>It all started with a spark—the realization that a few lines of code could shape the world around me. What began as dabbling with basic algorithms quickly turned into a full-on obsession with coding, solving problems, and creating
+                        cool stuff. From there, my journey has been one of constant exploration and a desire to break new ground.</p>
+
+                    <h4>What Drives Me<hr></h4>
+                    <p>I get a huge rush from bringing ideas to life. Whether it's making code run faster, squashing bugs, or seeing a project go from concept to reality, that’s what keeps me going. There’s something incredibly satisfying about cracking
+                        a tough problem and delivering a smooth, efficient solution.</p>
+
+                    <h4>What I Do<hr></h4>
+                    <p>I’m all about turning big ideas into real, functional applications. My thing is designing efficient algorithms and building scalable systems that can handle all sorts of needs. I enjoy diving deep into a project, applying creativity,
+                        and thinking outside the box to make it all work like a charm.</p>
+
+                    <h5>Beyond the Code: My Creative Side</h5>
+                    <p>When I’m not coding, you’ll probably find me in front of a canvas, painting. Yup, abstract art is my other passion! It’s a way for me to unwind and let my imagination run wild. Plus, it gives me a fresh perspective on problem-solving-sometimes
+                        the best coding breakthroughs happen after I’ve been messing around with colors and brush strokes.</p>
+
+                    <h4>Let’s Connect!<hr></h4>
+                    <p>If you’re into tech, art, or just want to chat about cool ideas, I’d love to connect! Whether it’s for collaboration, brainstorming, or just sharing stories, I’m all about building a community of creative minds. Feel free to reach
+                        out—let’s create something awesome together!</p>
+                    <br>
+                    <p>Thanks for stopping by, and I’m looking forward to hearing from you!</p>
+                </section>
+            </div>
+
+
+
+
+            <!--─────────────────Certifications────────────────-->
+            <div id="certifications" class="section">
+                <h3>Certifications <hr></h3>
+                <div class="certification">
+                    <h3>Full Stack Developer</h3>
+                    <p><strong>Completion Date:</strong> October 2024</p>
+                    <p>This certification equips you with the skills to build complete web applications, covering front-end technologies like HTML, CSS, and JavaScript, as well as back-end development using Node.js and Express.</p>
+                    <p><em>Skills Learned: </em> HTML, CSS, JavaScript, Node.js, React, PostgreSQL, Web3, and DApps.</p>
+                    <a href="certs/UC-0c12e08e-db4a-4d8b-bb5e-77d0427d328b.pdf" target="_blank">View Certificate</a>
+                </div>                
+                <!-- Add more certifications as needed -->
+            </div>
+
+
+
+            
+            <!--───────────────Skills───────────────-->
+            <div id="skills">
+                <h3>My Skills<hr></h3>
+                <div class="skills-container">
+                    <!-- Languages Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-code"></i> Languages:</h4>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-python" style="color:#306998;"></i> Python</li>
+                            <li><i class="fab fa-js" style="color:#f7df1e;"></i> JavaScript</li>
+                            <li><i class="devicon-cplusplus-plain colored"></i> C/C++</li>
+                            <li><i class="fab fa-java" style="color:#5382a1;"></i> Java</li>
+                            <li><i class="fab fa-rust" style="color:#dea584;"></i> Rust</li>
+                            <!-- Added Rust -->
+                            <li><i class="devicon-csharp-plain colored"></i> C#</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Development Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-code title-large"></i> Web Development:</h4>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-html5" style="color:#e34c26;"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt" style="color:#1572b6;"></i> CSS</li>
+                            <li><i class="fab fa-node-js" style="color:#339933;"></i> Express.js</li>
+                            <li><i class="fab fa-node" style="color:#339933;"></i> Node.js</li>
+                            <li><i class="devicon-flask-original" style="color:#5382a1;"></i> Flask</li>
+                            <li><i class="fab fa-react" style="color:#61DAFB;"></i> React.js</li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-database"></i> Databases:</h4>
+                        <ul class="skills-list">
+                            <li><i class="devicon-postgresql-plain" style="color:#336791;"></i> PostgreSQL</li>
+                            <li><i class="devicon-mysql-plain" style="color:#4479A1;"></i> MySQL</li>
+                            <li><i class="devicon-sqlite-plain colored"></i> SQLite</li>
+                            <li><i class="devicon-mongodb-plain" style="color:#177a16;"></i> MongoDB (NoSQL)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Version Control Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-code-branch"></i> Version Control:</h4>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-git-alt" style="color:#f1502f;"></i> Git</li>
+                            <li><i class="fab fa-github"></i> GitHub</li>
+                        </ul>
+                    </div>
+
+                    <!-- Other Tools Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-tools"></i> Other Tools:</h4>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-docker" style="color:#2496ED;"></i> Docker</li>
+                            <li><i class="fab fa-jenkins" style="color:#D24939;"></i> Jenkins</li>
+                            <li><i class="devicon-redis-plain colored"></i> Redis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Operating Systems Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-desktop"></i> Operating Systems:</h4>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-apple" style="color:#dcc4c4;"></i> macOS</li>
+                            <li><i class="fab fa-linux" style="color:#FCC624;"></i> Linux</li>
+                            <li><i class="fab fa-windows" style="color:#00a4ef;"></i> Windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--───────────────Projects───────────────-->
+            <div id="projects">
+                <h3>My Projects</h3>
+                <hr>
+                <div class="work-box">
+                    <div class="work">
+                        <!--───────────────card───────────────-->
+                        <div class="card">
+                            <img class="work-img" src="pics/hackerImage.webp" alt="Spotting The Hacker">
+                            <a href="https://github.com/hasanzaidi1/spotting_the_hacker" target="_blank">
+                                <div class="work-content">Spotting The Hacker
+                                    <br /> 🕵🏻 </div>
+                                <div class="project-lang">C</div>
+                            </a>
+                            <div class="description">
+                                This project helps in identifying potential hackers using various algorithms.
+                                <a href="https://github.com/hasanzaidi1/spotting_the_hacker" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="work-img" src="pics/passStren.jpeg" alt="Password Strength Meter">
+                            <a href="https://github.com/hasanzaidi1/password_strength" target="_blank">
+                                <div class="work-content">Password Strength Meter</div>
+                                <div class="project-lang">C</div>
+                            </a>
+                            <div class="description">
+                                This project assesses the strength of passwords based on specified criteria.
+                                <a href="https://github.com/hasanzaidi1/password_strength" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="work-img" src="pics/encryption.jpg" alt="RSA Encryption">
+                            <a href="https://github.com/hasanzaidi1/RSA_encryption" target="_blank">
+                                <div class="work-content">RSA Encryption</div>
+                                <div class="project-lang">Rust</div>
+                            </a>
+                            <div class="description">
+                                This project implements RSA encryption for secure data transmission.
+                                <a href="https://github.com/hasanzaidi1/RSA_encryption" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="work-img" src="pics/errorDetection.jpg" alt="Error Detection and Correction">
+                            <a href="https://github.com/hasanzaidi1/error_detection" target="_blank">
+                                <div class="work-content">Error Detection and Correction
+                                    <br />
+                                </div>
+                                <div class="project-lang">Rust</div>
+                            </a>
+                            <div class="description">
+                                This project detects and corrects errors in data transmission.
+                                <a href="https://github.com/hasanzaidi1/error_detection" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="work-img" src="pics/ABGame.jpeg" alt="AB Game">
+                            <a href="https://github.com/hasanzaidi1/AB_game.git" target="_blank">
+                                <div class="work-content">AB Game
+                                    <br />
+                                </div>
+                                <div class="project-lang">C-Sharp</div>
+                            </a>
+                            <div class="description">
+                                A fun game project built to enhance programming skills.
+                                <a href="https://github.com/hasanzaidi1/AB_game.git" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="work-img" src="pics/fitnessAppIcon.webp" alt="Health and Fitness App">
+                            <a href="https://github.com/hasanzaidi1/health_fitness_web_app" target="_blank">
+                                <div class="work-content">Health and Fitness
+                                    <br />App
+                                    <br />
+                                </div>
+                                <div class="project-lang">Flask</div>
+                            </a>
+                            <div class="description">
+                                A web application to track health and fitness activities.
+                                <a href="https://github.com/hasanzaidi1/health_fitness_web_app" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="work-img" src="pics/spotify_automation.webp" alt="Spotify Automation">
+                            <a href="https://github.com/hasanzaidi1/spotify_Automation" target="_blank">
+                                <div class="work-content">SpotAuto
+                                    <br />
+                                </div>
+                                <div class="project-lang">Python</div>
+                            </a>
+                            <div class="description">
+                                A project automating Spotify tasks using Python.
+                                <a href="https://github.com/hasanzaidi1/spotify_Automation" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+						<div class="card">
+                            <img class="work-img" src="pics/school_dash_icon.jpg" alt="School_Dash">
+                            <a href="https://github.com/hasanzaidi1/school_dashboard" target="_blank">
+                                <div class="work-content">School Dashboard
+                                    <br />
+                                </div>
+                                <div class="project-lang">Full Stack</div>
+                            </a>
+                            <div class="description">
+                                A dashboard for students, teachers and parents.
+                                <a href="https://github.com/hasanzaidi1/school_dashboard" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--──────────────Resume────────────────-->
+
+            <div id="resume">
+                <h3>Resumé<hr></h3>
+                <button class="mobile-resume-button">Open Resume</button>
+                <div class="resume-container">
+                    <iframe src="" frameborder="0" id="resume-iframe"></iframe>
+                </div>
+            </div>
+
+
+
+
+            <!--──────────────Contact────────────────-->
+            <div id="contact">
+                <!--────social media links─────-->
+                <h3>Contact<hr></h3>
+                <p>Feel free to contact me on my social media.</p>
+                <div class="social-media">
+                    <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></i></a>
+                    <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
+                    <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="mailto:hasanammarzaidi@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+        </main>
+        <footer class="copyright">© 2023
+            <a href="#" target="_blank"> Zaidi.</a>
+        </footer>
+        <!-- Night and Day Mode Button -->
+        <div class="night-day-button">
+            <button id="night-day-toggle" onclick="toggleNightDayMode()"><i id="icon" class="fas fa-sun"></i></button>
+        </div>
     </div>
 
+</body>
 
-    
-		<!--──────────────Contact────────────────-->
-	  <div id="contact">
-		  <!--────social media links─────-->
-		   <h3>Contact<hr></h3>
-		   <p>Feel free to contact me on my social media.</p>
-		    <div class="social-media">
-			  <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></i></a>
-			  <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-			  <a href="https://youtube.com/@carsplanesandmaths5797?si=t2UQCLapz4vxeE7n" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-		  </div>
-
-	</main>
-	  <footer class="copyright">© 2023 
-		  <a href="#" target="_blank"> Zaidi.</a>
-		</footer>
-	<!-- Night and Day Mode Button -->
-	<div class="night-day-button">
-		<button id="night-day-toggle" onclick="toggleNightDayMode()"><i id="icon" class="fas fa-sun"></i></button>
-	</div>
-  </div>
-  
-  </body>
 </html>
