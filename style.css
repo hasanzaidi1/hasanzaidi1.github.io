@@ -798,20 +798,6 @@ hr {
 
 
 
-/*──────────────────
-    DevOps Project
-──────────────────*/
-
-.devOps_Project {
-	background-color: var(--main-background);
-}
-
-.devOps_Project h3 {
-	color: var(--main-decor-color);
-	font-family: var(--main-font-family);
-	align-content: center;
-}
-
 
 /*──────────────────
     Skills Section

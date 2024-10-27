@@ -3,22 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGN2ENDFKZ"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <title>DevOps Project - The E-Marketing Corporation</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
 
-    gtag('config', 'G-DGN2ENDFKZ');
-    </script>
-    <title>DevOps Project</title>
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #2c3e50;
+        }
+
+        h2, h3, h4 {
+            padding: 20px;
+            color: #2c3e50;
+            margin: 0.5rem 0;
+        }
+
+        p, ul {
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Container Styles */
+        .devops-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* PDF Container */
+        .pdf-container {
+            margin: 1.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 600px;
+            background: #f4f4f4;
+        }
+
+        /* Button Styles */
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .devops-container {
+                padding: 1rem;
+            }
+
+            .pdf-container {
+                height: 400px;
+            }
+        }
+    </style>
 </head>
-<body class="devOps_Project">
-    <div id="projects">
-        <h3>The E-Marketing DevOps Project</h3>
-        <h4>kdwjfb</h4>
+<body class="devops-page">
+    <h1>The E-Marketing Corporation DevOps Project</h1>
+
+    <div class="devops-container">
+        <header>
+            <a href="../index.html" class="back-button" aria-label="Back to Portfolio">← Back to Portfolio</a>
+        </header>
+
+        <section class="project-section">
+            <h2 class="section-title">Project Overview</h2>
+            <p>The eMarketing Corporation is developing a comprehensive web application enabling business customers to order and monitor services efficiently. The development team structure includes:</p>
+            <ul>
+                <li>4 dedicated developers</li>
+                <li>1 UX designer</li>
+                <li>1 product owner</li>
+                <li>Total of 22 developers across 5 teams</li>
+            </ul>
+            <p>The tech stack primarily consists of Java and Microsoft SQL Server.</p>
+
+            <section class="project-section">
+                <h2 class="section-title">Existing Bad Practices and Improvements</h2>
+                <p>During the initial assessment of the eMarketing Corporation's operations, several bad practices were identified:</p>
+                <ul>
+                    <li><strong>Lack of Automation:</strong> Many deployment processes were manual, leading to errors and inconsistencies.</li>
+                    <li><strong>Poor Backlog Management:</strong> The backlog prioritization was often neglected, resulting in confusion among team members.</li>
+                    <li><strong>Inefficient Resource Management:</strong> The infrastructure was not optimized, leading to increased operational costs.</li>
+                    <li><strong>Slow Deployment Times:</strong> The deployment frequency was low due to cumbersome processes, affecting overall productivity.</li>
+                    <li><strong>Limited Rollback Capabilities:</strong> Rollback procedures were complex and time-consuming, risking service availability during failures.</li>
+                </ul>
+            
+                <h2 class="section-title">Improvements Implemented</h2>
+                <p>To address these challenges, the following improvements were made:</p>
+                <ul>
+                    <li>Implemented automated deployment pipelines to streamline the deployment process.</li>
+                    <li>Established a structured backlog management system to improve prioritization and task clarity.</li>
+                    <li>Optimized infrastructure and resource allocation to reduce operational costs.</li>
+                    <li>Adopted a Blue-Green deployment strategy to enhance deployment frequency and minimize downtime.</li>
+                    <li>Developed simplified rollback procedures, allowing for quicker responses to issues.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="project-details">
+            <h2 class="section-title">Proposed Solutions</h2>
+
+            <h3>Existing Environment</h3>
+            <ul>
+                <li>Development tasks in backlog kept on sticky notes, no capacity/sprint planning in place.</li>
+                <li>Current development environment runs ad-hoc local versioning from individual workstations on-site – No source control in place.</li>
+                <li>Package building done ad-hoc, by an individual – Requires replacement.</li>
+                <li>Existing Production Environment Resources configured for BLUE/GREEN Deployment.</li>
+            </ul>
+
+            <h3>Proposed Solution - Plan/Code</h3>
+            <ul>
+                <li>Use Azure Boards for backlog management.</li>
+                <li>Utilize Eclipse IDE for development in the Green environment.</li>
+                <li>Implement Git Branches for version control.</li>
+                <li>Connect Eclipse to Git Repository for secure storage.</li>
+            </ul>
+
+            <h3>Proposed Solution - Build/Test</h3>
+            <ul>
+                <li>Use Eclipse IDE compiler for automated testing.</li>
+                <li>Implement Jenkins for CI/CD to build and push application packages.</li>
+                <li>Conduct Regression or Integrated Testing in the Green environment.</li>
+            </ul>
+
+            <h3>Proposed Solution - Release/Deploy</h3>
+            <ul>
+                <li>Route production traffic from Blue to Green environment.</li>
+                <li>Quickly roll back to the Blue environment if issues arise.</li>
+                <li>Ensure fast recovery and meeting business requirements.</li>
+            </ul>
+
+            <h3>Proposed Solution - Operate/Monitor</h3>
+            <ul>
+                <li>Implement Ansible for configuration management and monitoring.</li>
+                <li>Ensure agile and responsive control over production software.</li>
+            </ul>
+        </section>
+
+        <section class="pdf-section">
+            <h2 class="section-title" style="text-align: center;">Project Documentation</h2>
+            <h3 style="text-align: center;">Current Environment Analysis</h3>
+            <div class="pdf-container" style="text-align: center;">
+                <iframe src="The eMarketing Corporation.pdf" title="Current Environment Documentation" width="80%" height="100%"></iframe>
+            </div>
+            <h3 style="text-align: center;">Improved DevOps Practices</h3>
+            <div class="pdf-container" style="text-align: center;">
+                <iframe src="Proposed_Solution_E-marketing.pdf" title="Improved DevOps Practices Documentation" width="80%" height="100%"></iframe>
+            </div>
+        </section>
     </div>
 
+    <script>
+        // Add event listener to handle dark/light mode if present in main site
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainSiteTheme = localStorage.getItem('theme');
+            if (mainSiteTheme) {
+                document.body.classList.toggle('dark-mode', mainSiteTheme === 'dark');
+            }
+        });
+    </script>
 </body>
 </html>
