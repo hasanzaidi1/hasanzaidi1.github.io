@@ -273,10 +273,10 @@ a.nav-link{
 }
 
 .certification {
+    border-radius: 18px;
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd; /* Light border */
-    border-radius: 5px;
     background-color: var(--main-background); /* White background for each certification */
 }
 
@@ -301,7 +301,7 @@ a.nav-link{
     color: var(--main-fonts-color);
     background-color: #007bff; /* Match your theme */
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: background-color 0.3s;
 }
 
@@ -378,7 +378,7 @@ div.resume-container {
     background-color: var(--main-decor-color);
     color: var(--main-fonts-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 15px;
@@ -828,20 +828,27 @@ p {
     font-weight: bold;
 }
 
-
-
 /* Container for all skill sections */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     grid-gap: 20px; /* Space between grid items */
+    justify-items: center; /* Centers items horizontally in their grid cells */
+    align-items: center; /* Centers items vertically in their grid cells */
 }
 
 /* Individual skill sections */
 .skills-section {
     background-color: var(--main-header-background);
     padding: 15px;
-    border-radius: 8px;
+    width: 85%; /* Can adjust this based on desired width */
+    border-radius: 15px;
+}
+
+.skills-section > h4 {
+    padding-bottom: 20px; 
+    font-size: 1.25em;      
+    font-weight: bold;     
 }
 
 /* Skills List Styling */

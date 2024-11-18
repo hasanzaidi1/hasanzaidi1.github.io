@@ -1,5 +1,5 @@
 
-const RESUME_FILE_NAME = "Resume_Professional_Final_v2.4.0.pdf";
+const RESUME_FILE_NAME = "Resume_v3.3.0-A-FS.pdf";
 
 // header scrolling effect
 $(window).on('scroll', function(){
