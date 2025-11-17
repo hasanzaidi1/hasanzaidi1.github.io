@@ -1,5 +1,5 @@
 
-const RESUME_FILE_NAME = "Resume.pdf";
+const RESUME_FILE_NAME = "assets/docs/Resume.pdf";
 
 // header scrolling effect
 $(window).on('scroll', function(){
