@@ -6,15 +6,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGN2ENDFKZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        	function gtag(){dataLayer.push(arguments);}
-        	gtag('js', new Date());
-        
-        	gtag('config', 'G-DGN2ENDFKZ');
-        
-            document.addEventListener('DOMContentLoaded', () => {
-                const resumeLink = document.getElementById('resume-iframe');
-                resumeLink.setAttribute('src', RESUME_FILE_NAME); // Set href using the global variable
-            });
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DGN2ENDFKZ');
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -25,11 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/950246c8f6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <!-- Font Awesome CDN for other icons -->
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- Devicon CDN for PostgreSQL, MySQL, etc. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
@@ -41,9 +32,10 @@
         <header>
 
             <nav>
+                <div class="logo-mark">HZ</div>
                 <ul class="nav-bar">
                     <li><a class="nav-link" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li><a class="nav-link" href="#about-me">About</a></li>
                     <li><a class="nav-link" href="#certifications">Certifications</a></li>
                     <li><a class="nav-link" href="#skills">Skills</a></li>
                     <li><a class="nav-link" href="#projects">Projects</a></li>
@@ -51,323 +43,307 @@
                     <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
 
-                <div class="hamburger" onclick="toggleSidebar()">
+                <div class="hamburger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </nav>
         </header>
+
+        <div class="floating-socials" aria-label="Social links">
+            <a href="https://twitter.com/hasanZa26810164" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://github.com/hasanzaidi1" target="_blank" aria-label="GitHub"><i class='fab fa-github'></i></a>
+            <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank" aria-label="LinkedIn"><i class='fab fa-linkedin-in'></i></a>
+            <a href="mailto:hasanammarzaidi@outlook.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
         <main>
-            <!--─────────────────Home────────────────-->
-            <div id="home">
-                <div class="filter"></div>
-                <section class="intro">
-                    <h3>Hasan Zaidi<hr></h3>
-
-
-                    <!--────social media links─────-->
-
-                    <div class="social-media">
-                        <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
-                        <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-                        <a href="mailto:hasanammarzaidi@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <!--─────────────────Hero────────────────-->
+            <section id="home" class="hero">
+                <div class="hero-gradient"></div>
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <p class="eyebrow">Full Stack Developer · DevOps Explorer</p>
+                        <h1>Hasan Zaidi</h1>
+                        <p class="lead">I architect performant digital experiences, blending clean code, thoughtful UX, and resilient cloud infrastructure to launch ideas with confidence.</p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn primary">View Projects</a>
+                            <a href="mailto:hasanammarzaidi@outlook.com" class="btn secondary">Let’s Collaborate</a>
+                            <a href="#resume" class="btn ghost">Download Résumé</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-card">
+                                <span class="stat-value">5+</span>
+                                <span class="stat-label">Years coding</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Shipped projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-value">∞</span>
+                                <span class="stat-label">Curiosity</span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
+                    <div class="hero-profile">
+                        <div class="profile-card">
+                            <img src="pics/Profile_pic.jpeg" alt="Portrait of Hasan Zaidi">
+                            <div class="profile-ring"></div>
+                        </div>
+                        <p class="profile-caption">Currently crafting delightful interfaces & highly available backends.</p>
+                    </div>
+                </div>
+            </section>
 
 
             <!--─────────────────About Me────────────────-->
-            <div id="about-me">
-
-                <div class="filter"></div>
-                <section class="intro">
-                    <h3>About Me<hr></h3>
-
-                    <p>Hey there! I'm Hasan, a curious and passionate programmer who's always on the lookout for the latest tech trends and new ways to push the envelope in the digital world. I love learning, building, and growing my skill set with every
-                        new challenge.</p>
-                    <div class="profile-image">
-                        <img src="pics/Profile_pic.jpeg" alt="">
-                    </div>
-
-                    <h4>My Journey<hr></h4>
-                    <p>It all started with a spark—the realization that a few lines of code could shape the world around me. What began as dabbling with basic algorithms quickly turned into a full-on obsession with coding, solving problems, and creating
-                        cool stuff. From there, my journey has been one of constant exploration and a desire to break new ground.</p>
-
-                    <h4>What Drives Me<hr></h4>
-                    <p>I get a huge rush from bringing ideas to life. Whether it's making code run faster, squashing bugs, or seeing a project go from concept to reality, that’s what keeps me going. There’s something incredibly satisfying about cracking
-                        a tough problem and delivering a smooth, efficient solution.</p>
-
-                    <h4>What I Do<hr></h4>
-                    <p>I’m all about turning big ideas into real, functional applications. My thing is designing efficient algorithms and building scalable systems that can handle all sorts of needs. I enjoy diving deep into a project, applying creativity,
-                        and thinking outside the box to make it all work like a charm.</p>
-
-                    <h5>Beyond the Code: My Creative Side</h5>
-                    <p>When I’m not coding, you’ll probably find me in front of a canvas, painting. Yup, abstract art is my other passion! It’s a way for me to unwind and let my imagination run wild. Plus, it gives me a fresh perspective on problem-solving-sometimes
-                        the best coding breakthroughs happen after I’ve been messing around with colors and brush strokes.</p>
-
-                    <h4>Let’s Connect!<hr></h4>
-                    <p>If you’re into tech, art, or just want to chat about cool ideas, I’d love to connect! Whether it’s for collaboration, brainstorming, or just sharing stories, I’m all about building a community of creative minds. Feel free to reach
-                        out—let’s create something awesome together!</p>
-                    <br>
-                    <p>Thanks for stopping by, and I’m looking forward to hearing from you!</p>
-                </section>
-            </div>
+            <section id="about-me" class="section shell">
+                <div class="section-header">
+                    <p class="eyebrow">Story</p>
+                    <h2>About Me</h2>
+                    <p>A curious technologist who believes thoughtful experiences and reliable systems should always go hand in hand.</p>
+                </div>
+                <div class="about-grid">
+                    <article class="about-card">
+                        <h3>My Journey</h3>
+                        <p>What started as tinkering with algorithms quickly evolved into designing resilient platforms. Each project sharpened my ability to navigate ambiguity, uncover insights, and ship value.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Craft & Drive</h3>
+                        <p>I’m energized by solving tough problems—optimizing performance, building pipelines, and turning fuzzy requirements into polished products.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Beyond the Screen</h3>
+                        <p>Abstract painting keeps my creativity alive. Stepping away from code often unlocks a fresh perspective that later fuels elegant engineering.</p>
+                    </article>
+                    <article class="about-card highlight">
+                        <h3>Let’s Connect</h3>
+                        <p>If you’re building something bold, I’d love to collaborate—from ideation to deployment.</p>
+                        <a class="text-link" href="mailto:hasanammarzaidi@outlook.com">Start a conversation →</a>
+                    </article>
+                </div>
+            </section>
 
 
 
 
             <!--─────────────────Certifications────────────────-->
-            <div id="certifications" class="section">
-                <h3>Certifications <hr></h3>
-                <div class="certification">
-                    <h3>Full Stack Developer</h3>
-                    <p><strong>Completion Date:</strong> October 2024</p>
-                    <p>This certification equips me with the skills required to build complete web applications, covering front-end technologies like HTML, CSS, and JavaScript (React), as well as back-end development using Node.js and Express.</p>
-                    <p><em>Skills Learned: </em> HTML, CSS, JavaScript, Node.js, React, PostgreSQL, Web3, and DApps.</p>
-                    <a href="certs/UC-0c12e08e-db4a-4d8b-bb5e-77d0427d328b.pdf" target="_blank">View Certificate</a>
-                </div>                
-                <!-- Add more certifications as needed -->
-            </div>
+            <section id="certifications" class="section shell">
+                <div class="section-header">
+                    <p class="eyebrow">Proof</p>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="cert-grid">
+                    <article class="cert-card">
+                        <div>
+                            <p class="cert-pill">Oct 2024</p>
+                            <h3>Full Stack Developer</h3>
+                            <p>Immersive curriculum spanning modern front-end stacks, robust APIs, DevOps, and decentralized applications.</p>
+                        </div>
+                        <p class="cert-skills">HTML · CSS · JavaScript · Node.js · React · PostgreSQL · Web3</p>
+                        <a href="certs/UC-0c12e08e-db4a-4d8b-bb5e-77d0427d328b.pdf" target="_blank" class="btn ghost small">View Certificate</a>
+                    </article>
+                </div>
+            </section>
 
 
 
             
             <!--───────────────Skills───────────────-->
-            <div id="skills">
-                <h3>My Skills<hr></h3>
-                <div class="skills-container">
-                    <!-- Languages Section -->
-                    <div class="skills-section">
-                        <h4><i class="fas fa-code"></i> Languages:</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-python" style="color:#306998;"></i> Python</li>
-                            <li><i class="fab fa-js" style="color:#f7df1e;"></i> JavaScript</li>
-                            <li><i class="devicon-cplusplus-plain colored"></i> C/C++</li>
-                            <li><i class="fab fa-java" style="color:#5382a1;"></i> Java</li>
-                            <li><i class="fab fa-rust" style="color:#dea584;"></i> Rust</li>
-                            <!-- Added Rust -->
-                            <li><i class="devicon-csharp-plain colored"></i> C#</li>
-                        </ul>
-                    </div>
-
-                    <!-- Web Development Section -->
-                    <div class="skills-section">
-                        <h4><i class="fas fa-code title-large"></i> Web Development:</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-html5" style="color:#e34c26;"></i> HTML</li>
-                            <li><i class="fab fa-css3-alt" style="color:#1572b6;"></i> CSS</li>
-                            <li><i class="fab fa-node-js" style="color:#339933;"></i> Express.js</li>
-                            <li><i class="fab fa-node" style="color:#339933;"></i> Node.js</li>
-                            <li><i class="devicon-flask-original" style="color:#5382a1;"></i> Flask</li>
-                            <li><i class="fab fa-react" style="color:#61DAFB;"></i> React.js</li>
-                        </ul>
-                    </div>
-
-                    <!-- Databases Section -->
-                    <div class="skills-section">
-                        <h4><i class="fas fa-database"></i> Databases:</h4>
-                        <ul class="skills-list">
-                            <li><i class="devicon-postgresql-plain" style="color:#336791;"></i> PostgreSQL</li>
-                            <li><i class="devicon-mysql-plain" style="color:#4479A1;"></i> MySQL</li>
-                            <li><i class="devicon-sqlite-plain colored"></i> SQLite</li>
-                            <li><i class="devicon-mongodb-plain" style="color:#177a16;"></i> MongoDB (NoSQL)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Version Control Section -->
-                    <div class="skills-section">
-                        <h4><i class="fas fa-code-branch"></i> Version Control:</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-git-alt" style="color:#f1502f;"></i> Git</li>
-                            <li><i class="fab fa-github"></i> GitHub</li>
-                        </ul>
-                    </div>
-
-                    <!-- Other Tools Section -->
-                    <div class="skills-section">
-                        <h4><i class="fas fa-tools"></i> Other Tools:</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-docker" style="color:#2496ED;"></i> Docker</li>
-                            <li><i class="fab fa-jenkins" style="color:#D24939;"></i> Jenkins</li>
-                            <li><i class="devicon-redis-plain colored"></i> Redis</li>
-                        </ul>
-                    </div>
-
-                    <!-- Operating Systems Section -->
-                    <div class="skills-section">
-                        <h4><i class="fas fa-desktop"></i> Operating Systems:</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-apple" style="color:#dcc4c4;"></i> macOS</li>
-                            <li><i class="fab fa-linux" style="color:#FCC624;"></i> Linux</li>
-                            <li><i class="fab fa-windows" style="color:#00a4ef;"></i> Windows</li>
-                        </ul>
-                    </div>
+            <section id="skills" class="section shell">
+                <div class="section-header">
+                    <p class="eyebrow">Toolkit</p>
+                    <h2>Skills & Stacks</h2>
+                    <p>Everything I rely on to plan, ship, and iterate with confidence.</p>
                 </div>
-            </div>
+                <div class="skills-grid">
+                    <article class="skills-card">
+                        <h4><i class="fas fa-code"></i> Languages</h4>
+                        <p>Python, JavaScript, C/C++, Java, Rust, C#</p>
+                    </article>
+                    <article class="skills-card">
+                        <h4><i class="fas fa-layer-group"></i> Web</h4>
+                        <p>HTML, CSS, Express.js, Node.js, Flask, React</p>
+                    </article>
+                    <article class="skills-card">
+                        <h4><i class="fas fa-database"></i> Data</h4>
+                        <p>PostgreSQL, MySQL, SQLite, MongoDB</p>
+                    </article>
+                    <article class="skills-card">
+                        <h4><i class="fas fa-code-branch"></i> Ops & Versioning</h4>
+                        <p>Git, GitHub, Docker, Jenkins, Redis</p>
+                    </article>
+                    <article class="skills-card">
+                        <h4><i class="fas fa-laptop"></i> Operating Systems</h4>
+                        <p>macOS, Linux, Windows</p>
+                    </article>
+                </div>
+            </section>
 
 
 
             <!--───────────────Projects───────────────-->
-            <div id="projects">
-                <h3>My Projects</h3>
-                <hr>
-                <div class="work-box">
-                    <div class="work">
-                        <!--───────────────card───────────────-->
-                        <div class="card">
-                            <img class="work-img" src="pics/hackerImage.webp" alt="Spotting The Hacker">
-                            <a href="https://github.com/hasanzaidi1/spotting_the_hacker" target="_blank">
-                                <div class="work-content">Spotting The Hacker
-                                    <br /> 🕵🏻 </div>
-                                <div class="project-lang">C</div>
-                            </a>
-                            <div class="description">
-                                This project helps in identifying potential hackers using various algorithms.
-                                <a href="https://github.com/hasanzaidi1/spotting_the_hacker" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/passStren.jpeg" alt="Password Strength Meter">
-                            <a href="https://github.com/hasanzaidi1/password_strength" target="_blank">
-                                <div class="work-content">Password Strength Meter</div>
-                                <div class="project-lang">C</div>
-                            </a>
-                            <div class="description">
-                                This project assesses the strength of passwords based on specified criteria.
-                                <a href="https://github.com/hasanzaidi1/password_strength" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/encryption.jpg" alt="RSA Encryption">
-                            <a href="https://github.com/hasanzaidi1/RSA_encryption" target="_blank">
-                                <div class="work-content">RSA Encryption</div>
-                                <div class="project-lang">Rust</div>
-                            </a>
-                            <div class="description">
-                                This project implements RSA encryption for secure data transmission.
-                                <a href="https://github.com/hasanzaidi1/RSA_encryption" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/errorDetection.jpg" alt="Error Detection and Correction">
-                            <a href="https://github.com/hasanzaidi1/error_detection" target="_blank">
-                                <div class="work-content">Error Detection and Correction
-                                    <br />
-                                </div>
-                                <div class="project-lang">Rust</div>
-                            </a>
-                            <div class="description">
-                                This project detects and corrects errors in data transmission.
-                                <a href="https://github.com/hasanzaidi1/error_detection" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/ABGame.jpeg" alt="AB Game">
-                            <a href="https://github.com/hasanzaidi1/AB_game.git" target="_blank">
-                                <div class="work-content">AB Game
-                                    <br />
-                                </div>
-                                <div class="project-lang">C-Sharp</div>
-                            </a>
-                            <div class="description">
-                                A fun game project built to enhance programming skills.
-                                <a href="https://github.com/hasanzaidi1/AB_game.git" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/fitnessAppIcon.webp" alt="Health and Fitness App">
-                            <a href="https://github.com/hasanzaidi1/health_fitness_web_app" target="_blank">
-                                <div class="work-content">Health and Fitness
-                                    <br />App
-                                    <br />
-                                </div>
-                                <div class="project-lang">Flask</div>
-                            </a>
-                            <div class="description">
-                                A web application to track health and fitness activities.
-                                <a href="https://github.com/hasanzaidi1/health_fitness_web_app" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/spotify_automation.webp" alt="Spotify Automation">
-                            <a href="https://github.com/hasanzaidi1/spotify_Automation" target="_blank">
-                                <div class="work-content">SpotAuto
-                                    <br />
-                                </div>
-                                <div class="project-lang">Python</div>
-                            </a>
-                            <div class="description">
-                                A project automating Spotify tasks using Python.
-                                <a href="https://github.com/hasanzaidi1/spotify_Automation" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-						<div class="card">
-                            <img class="work-img" src="pics/school_dash_icon.jpg" alt="School_Dash">
-                            <a href="https://github.com/hasanzaidi1/school_dashboard" target="_blank">
-                                <div class="work-content">School Dashboard
-                                    <br />
-                                </div>
-                                <div class="project-lang">Full Stack</div>
-                            </a>
-                            <div class="description">
-                                A dashboard for students, teachers and parents.
-                                <a href="https://github.com/hasanzaidi1/school_dashboard" class="link-git-proj">GitHub <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="work-img" src="pics/devOps.webp" alt="devops_inf_loop">
-                            <a href="DevOpsProjects/DevOpsPage.html" target="_blank">
-                                <div class="work-content">The E-Marketing Corporation
-                                    <br />
-                                </div>
-                                <div class="project-lang">DevOps</div>
-                            </a>
-                            <div class="description">
-                                An agile solution for a marketing company.
-                                <a href="DevOpsProjects/DevOpsPage.html" class="link-git-proj">Details <i class="fas fa-arrow-alt-circle-up"></i></a>
-                            </div>
-                        </div>
-                    </div>
+            <section id="projects" class="section shell">
+                <div class="section-header">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Projects</h2>
                 </div>
-            </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <img class="project-img" src="pics/school_dash_icon.jpg" alt="School Dashboard">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">Full Stack</span>
+                            </div>
+                            <h3>School Dashboard</h3>
+                            <p>Unified portal for students, teachers, and parents to collaborate around progress.</p>
+                            <a href="https://github.com/hasanzaidi1/14Stars-project" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/hackerImage.webp" alt="Spotting The Hacker">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">C</span>
+                            </div>
+                            <h3>Threat Sentinel</h3>
+                            <p>Algorithms that analyze suspicious behaviour to surface malicious actors before damage is done.</p>
+                            <a href="https://github.com/hasanzaidi1/spotting_the_hacker" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/passStren.jpeg" alt="Password Strength Meter">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">C</span>
+                            </div>
+                            <h3>CipherGuard Password Meter</h3>
+                            <p>Real-time heuristics to evaluate vector coverage, empowering users to create secure credentials.</p>
+                            <a href="https://github.com/hasanzaidi1/password_strength" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/encryption.jpg" alt="RSA Encryption">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">Rust</span>
+                            </div>
+                            <h3>Aurora RSA Toolkit</h3>
+                            <p>End-to-end RSA implementation that keeps sensitive payloads safe during transport.</p>
+                            <a href="https://github.com/hasanzaidi1/RSA_encryption" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/errorDetection.jpg" alt="Error Detection and Correction">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">Rust</span>
+                            </div>
+                            <h3>Signal Shield ECC</h3>
+                            <p>Reliability toolkit that identifies and patches transmission errors on the fly.</p>
+                            <a href="https://github.com/hasanzaidi1/error_detection" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/ABGame.jpeg" alt="AB Game">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">C#</span>
+                            </div>
+                            <h3>AB Game</h3>
+                            <p>A puzzle-style experience built to sharpen logic while shipping production-ready C#.</p>
+                            <a href="https://github.com/hasanzaidi1/AB_game.git" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/fitnessAppIcon.webp" alt="Health and Fitness App">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">Flask</span>
+                            </div>
+                            <h3>Health & Fitness App</h3>
+                            <p>A wellness tracker that pairs Flask APIs with delightful UX for habit building.</p>
+                            <a href="https://github.com/hasanzaidi1/health_fitness_web_app" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/spotify_automation.webp" alt="Spotify Automation">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">Python</span>
+                            </div>
+                            <h3>SpotAuto</h3>
+                            <p>Automation workflows that curate playlists, manage libraries, and save time in Spotify.</p>
+                            <a href="https://github.com/hasanzaidi1/spotify_Automation" target="_blank" class="text-link">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img class="project-img" src="pics/devOps.webp" alt="DevOps case study">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-pill">DevOps</span>
+                            </div>
+                            <h3>The E-Marketing Corporation</h3>
+                            <p>An agile DevOps solution with automated delivery loops, observability, and resilient infrastructure.</p>
+                            <a href="DevOpsProjects/DevOpsPage.html" target="_blank" class="text-link">Explore the case study</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
 
 
             <!--──────────────Resume────────────────-->
 
-            <div id="resume">
-                <h3>Resumé<hr></h3>
+            <section id="resume" class="section shell">
+                <div class="section-header">
+                    <p class="eyebrow">Résumé</p>
+                    <h2>Experience Snapshot</h2>
+                    <p>Prefer a quick download? Grab the PDF or browse it inline.</p>
+                </div>
                 <button class="mobile-resume-button">Open Resume</button>
                 <div class="resume-container">
                     <iframe src="" frameborder="0" id="resume-iframe"></iframe>
                 </div>
-            </div>
+                <div class="resume-actions">
+                    <a class="btn primary small" href="Resume.pdf" target="_blank">Download PDF</a>
+                    <a class="btn ghost small" href="mailto:hasanammarzaidi@outlook.com">Request full CV</a>
+                </div>
+            </section>
 
 
 
 
             <!--──────────────Contact────────────────-->
-            <div id="contact">
-                <!--────social media links─────-->
-                <h3>Contact<hr></h3>
-                <p>Feel free to contact me on my social media.</p>
-                <div class="social-media">
-                    <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></i></a>
-                    <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
-                    <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-                    <a href="mailto:hasanammarzaidi@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <section id="contact" class="section shell">
+                <div class="section-header">
+                    <p class="eyebrow">Collab</p>
+                    <h2>Let’s build something memorable</h2>
+                    <p>Tell me about the product, workflow, or story you’re ready to ship.</p>
                 </div>
-            </div>
+                <div class="contact-card">
+                    <div class="contact-actions">
+                        <a href="mailto:hasanammarzaidi@outlook.com" class="btn primary">Email me</a>
+                        <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank" class="btn secondary">Message on LinkedIn</a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://twitter.com/hasanZa26810164" target="_blank"><i class="fab fa-x-twitter"></i></i></a>
+                        <a href="https://github.com/hasanzaidi1" target="_blank"><i class='fab fa-github'></i></a>
+                        <a href="https://www.linkedin.com/in/hasan-zaidi-194254171" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+                        <a href="mailto:hasanammarzaidi@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </section>
 
         </main>
-        <footer class="copyright">© 2023
-            <a href="#" target="_blank"> Zaidi.</a>
+        <footer class="copyright">© <span id="year"></span>
+            <a href="#home">Hasan Zaidi</a>
         </footer>
         <!-- Night and Day Mode Button -->
         <div class="night-day-button">
-            <button id="night-day-toggle" onclick="toggleNightDayMode()"><i id="icon" class="fas fa-sun"></i></button>
+            <button id="night-day-toggle"><i id="icon" class="fas fa-sun"></i></button>
         </div>
     </div>
 

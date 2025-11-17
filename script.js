@@ -15,26 +15,45 @@ $(window).on('scroll', function(){
 const navSlide = () => {
     const hamburger = document.querySelector(".hamburger");
     const navbar = document.querySelector(".nav-bar");
-    const navLinks = document.querySelectorAll(".nav-bar li");
+    const navLinks = document.querySelectorAll(".nav-bar li a");
 
-    hamburger.onclick = () => {
+    if (!hamburger || !navbar) return;
+
+    const toggleMenu = () => {
         navbar.classList.toggle("nav-active");
-            
-        // Animation links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = "";
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+1}s`;
+        hamburger.classList.toggle("toggle");
+    };
+
+    hamburger.onclick = toggleMenu;
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            if (navbar.classList.contains("nav-active")) {
+                toggleMenu();
             }
         });
+    });
+};
 
-        // Hamburger animation
-        hamburger.classList.toggle("toggle");
+const setCurrentYear = () => {
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
     }
-}
+};
 
-window.onload = () => navSlide();
+const setResumeFrame = () => {
+    const resumeLink = document.getElementById('resume-iframe');
+    if (resumeLink) {
+        resumeLink.setAttribute('src', RESUME_FILE_NAME);
+    }
+};
+
+window.onload = () => {
+    navSlide();
+    setCurrentYear();
+    setResumeFrame();
+};
 
 // Night and Day Mode Functionality
 function toggleNightDayMode() {
@@ -88,7 +107,10 @@ function handleMobileResumeButton() {
     toggleMobileView(); // Initial call
 }
 
-document.addEventListener('DOMContentLoaded', handleMobileResumeButton);
-
-// Call the toggleNightDayMode function when the button is clicked
-document.getElementById('night-day-toggle').addEventListener('click', toggleNightDayMode);
+document.addEventListener('DOMContentLoaded', () => {
+    handleMobileResumeButton();
+    const nightToggle = document.getElementById('night-day-toggle');
+    if (nightToggle) {
+        nightToggle.addEventListener('click', toggleNightDayMode);
+    }
+});
